@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./index.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div id="app-cont">
+            <div id="app">
+                <header class="header">
+                    <h2>Calculator</h2>
+                    <button class="showHide">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            width="24px"
+                            fill="#ffffff"
+                        >
+                            <path
+                                d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.25 2.52.77-1.28-3.52-2.09V8z"
+                            />
+                        </svg>
+                    </button>
+                </header>
+                <div class="display">
+                    <input
+                        type="text"
+                        placeholder="0"
+                        id="displayInput"
+                        maxlength="25"
+                        inputmode="none"
+                    />
+                </div>
+                <div class="buttons">
+                    <button data-value="7" class="num-btn" id="calc-seven">
+                        7
+                    </button>
+                    <button data-value="8" class="num-btn" id="calc-eight">
+                        8
+                    </button>
+                    <button data-value="9" class="num-btn" id="calc-nine">
+                        9
+                    </button>
+                    <button data-value="^" class="ope-btn" id="calc-power">
+                        ^
+                    </button>
+                    <button
+                        data-value="del"
+                        class="del-btn special-btn"
+                        id="calc-del"
+                    >
+                        DEL
+                    </button>
+                    <button data-value="6" class="num-btn" id="calc-six">
+                        6
+                    </button>
+                    <button data-value="5" class="num-btn" id="calc-five">
+                        5
+                    </button>
+                    <button data-value="4" class="num-btn" id="calc-four">
+                        4
+                    </button>
+                    <button data-value="!" class="ope-btn" id="calc-fact">
+                        !
+                    </button>
+                    <button data-value="+" class="ope-btn" id="calc-plus">
+                        +
+                    </button>
+                    <button data-value="1" class="num-btn" id="calc-one">
+                        1
+                    </button>
+                    <button data-value="2" class="num-btn" id="calc-two">
+                        2
+                    </button>
+                    <button data-value="3" class="num-btn" id="calc-three">
+                        3
+                    </button>
+                    <button data-value="(" class="ope-btn" id="calc-brakOpen">
+                        (
+                    </button>
+                    <button data-value="-" class="ope-btn" id="calc-minus">
+                        -
+                    </button>
+                    <button data-value="." class="ope-btn" id="calc-decimal">
+                        .
+                    </button>
+                    <button data-value="0" class="num-btn" id="calc-zero">
+                        0
+                    </button>
+                    <button data-value="%" class="ope-btn" id="calc-percent">
+                        %
+                    </button>
+                    <button data-value=")" class="ope-btn" id="calc-brakClose">
+                        )
+                    </button>
+                    <button data-value="*" class="ope-btn" id="calc-multiply">
+                        *
+                    </button>
+                    <button
+                        data-value="reset"
+                        class="reset-btn special-btn"
+                        id="calc-reset"
+                    >
+                        RESET
+                    </button>
+                    <button
+                        data-value="="
+                        class="enter-btn special-btn"
+                        id="calc-enter"
+                    >
+                        =
+                    </button>
+                    <button data-value="/" class="ope-btn" id="calc-divide">
+                        /
+                    </button>
+                </div>
+                <div class="history close">
+                    <h3 class="head">
+                        History <button class="closeBtn">x</button>
+                    </h3>
+                    <div class="listCont">
+                        <div class="list">
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="github">
+                <a target="_blank" href="https://github.com/mienaiyami"
+                    >github</a
+                >
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
